@@ -57,25 +57,28 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
 /* Buttons */
 
-.btn{
-    display: inline;
-    padding: 5em 1.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: tranform 200ms ease-in-out;
-
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: tranform 200ms ease-in-out;
 }
 
-.btn:hover{
-    transform: scale(1.1);
+.btn:hover {
+  transform: scale(1.1);
 }
 
 /* Typography */
@@ -191,8 +194,12 @@ nav {
   opacity: 0.25;
 }
 
+.services {
+  margin-bottom: 4em;
+}
+
 .service {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -200,12 +207,11 @@ nav {
   .services {
     display: flex;
     max-width: 1000px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .service + .service {
     margin-left: 2em;
   }
-
-
 }
